@@ -150,7 +150,7 @@ STATIC_URL = "static/"  # Папка в корне проекта, где буд
 if 'localhost' in ALLOWED_HOSTS:
    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # Папка для локального проекта
 else:
-   STATIC_ROOT = os.path.join(BASE_DIR, 'static')  # Папка для сервера
+   STATIC_ROOT = os.path.join(BASE_DIR, 'static')   # Папка для сервера
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Место для хранения (на сервере) медиафайлов
